@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left-sidebar {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #eff4ea;
+  padding: 50px;
+  text-align: center;
+}
+
+.left-sidebar .brand {
+  display: block;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+}
+
+.left-sidebar ul {
+  padding: 50px 20px;
+  list-style-type: none;
+}
+
+.left-sidebar ul li {
+  padding: 15px 0;
+}
+
+.left-sidebar ul li > a {
+  text-decoration: none;
+  color: #7aa20d;
+}
+
+.left-sidebar ul li > a:hover {
+  transform: scale(1.1);
+}
+
+.main {
+  margin-top: 5%;
+}
+
+.main .header {
+  text-align: center;
+}
+
+.main .article > section {
+  height: 50vh;
+  margin-top: 2%;
+}
+
+.main .article > section h2 {
+  margin-bottom: 10px;
+}
+
+.main .article > section p {
+  margin-bottom: 10px;
+}
+
+.footer {
+  bottom: 0;
+  /* background-color: #eff4ea; */
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .info {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .info .social-media {
+  list-style-type: none;
+  color: transparent;
+  display: flex;
+}
+
+.social-media li {
+  padding: 10px;
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/* @media (min-width: 1281px) {
+} */
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) {
+  body {
+    margin-left: 27%;
+  }
+  footer {
+    margin-left: -41px;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
