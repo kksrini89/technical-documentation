@@ -15,7 +15,7 @@ if (sidebarToggleLink) {
 }
 
 document.body.addEventListener('click', function() {
-  if (sidebarToggleLink) {
-    leftSidebar.classList.toggle('minimize-menu');
+  if (sidebarToggleLink && leftSidebar.style.display === '' || leftSidebar.style.display === 'block') {
+    leftSidebar.classList.remove('minimize-menu');
   }
 });
